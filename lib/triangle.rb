@@ -33,7 +33,7 @@ class Triangle
   end
 
   def validate_triangle
-
+    real_triangle = [(side_one + side_two > side_three) || (side_two + side_three > side_one) || (side_one + side_three > side_two)]
   end
 
 class TriangleError < StandardError
