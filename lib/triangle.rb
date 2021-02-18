@@ -37,6 +37,7 @@ class Triangle
     real_triangle.each do |side|
       if side <= 0
         raise TriangleError
+      end
     end
   end
 
