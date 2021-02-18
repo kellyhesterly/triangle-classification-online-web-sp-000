@@ -10,7 +10,7 @@ class Triangle
   end
 
   def kind
-    # binding.pry
+    validate_triangle
     if equilateral
       :equilateral
     elsif isosceles
