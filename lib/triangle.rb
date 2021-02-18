@@ -38,6 +38,7 @@ class Triangle
       if side <= 0
         raise TriangleError
       end
+      end
   end
 
 class TriangleError < StandardError
