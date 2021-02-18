@@ -15,8 +15,7 @@ class Triangle
       :equilateral
       unless side_one == 0 && side_two == 0 && side_three == 0
         raise TriangleError
-      end
-    elsif isosceles
+    else isosceles
       :isosceles
     else scalene
       :scalene
