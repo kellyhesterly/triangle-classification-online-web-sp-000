@@ -11,16 +11,17 @@ class Triangle
 
   def kind
     # binding.pry
-    if equilateral
-      :equilateral
-    elsif isosceles
+    if isosceles
       :isosceles
     else scalene
       :scalene
     end
     if side_one == 0 && side_two == 0 && side_three == 0
       raise TriangleError
+    rescue TriangleError => error
     end
+  else equilateral
+    :equilateral
   end
 
   def equilateral
