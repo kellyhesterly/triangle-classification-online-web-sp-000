@@ -12,7 +12,7 @@ class Triangle
   def kind
     binding.pry
     if self == equilateral
-      :equilateral
+      return :equilateral
     elsif self == isosceles
       :isosceles
     else self == scalene
