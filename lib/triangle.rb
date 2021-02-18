@@ -18,6 +18,9 @@ class Triangle
     else scalene
       :scalene
     end
+    if self == (side_one = 0) && (side_two == 0) && (side_three == 0)
+      raise TriangleError
+    end
   end
 
   def equilateral
