@@ -18,7 +18,7 @@ class Triangle
     else scalene
       :scalene
     end
-      if triangle.class != Triangle
+      if self != Triangle
         raise TriangleError
       end
   end
