@@ -17,6 +17,7 @@ class Triangle
       :isosceles
     else scalene
       :scalene
+      ebd
   end
 
   def equilateral
