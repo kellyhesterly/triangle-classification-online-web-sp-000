@@ -34,6 +34,10 @@ class Triangle
 
   def validate_triangle
     real_triangle = [(side_one + side_two > side_three) || (side_two + side_three > side_one) || (side_one + side_three > side_two)]
+    real_triangle.each do |side|
+      if side <= 0
+        raise TriangleError
+      end
   end
 
 class TriangleError < StandardError
