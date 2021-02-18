@@ -17,7 +17,6 @@ class Triangle
       :isosceles
     self.scalene?
       :scalene
-    end
   end
 
   def equilateral
