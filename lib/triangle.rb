@@ -18,8 +18,9 @@ class Triangle
     else scalene
       :scalene
     end
-
-
+      if triangle.class != Triangle
+        raise TriangleError
+      end
   end
 
   def equilateral
