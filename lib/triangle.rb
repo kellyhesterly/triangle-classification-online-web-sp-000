@@ -21,6 +21,10 @@ class Triangle
   end
 
   def validate_triangle
+    valid_triangle = [(a + b > c) || (a + c > b) || (b + c > a)]
+    [a, b, c].each do |side|
+      valid_triangle << false if side <= 0
+      raise TriangleError if valid_triangle.include?(false)
   end
 
 end
