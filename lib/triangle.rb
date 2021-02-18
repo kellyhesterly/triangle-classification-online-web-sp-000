@@ -14,9 +14,9 @@ class Triangle
     if self == equilateral
       return :equilateral
     elsif self == isosceles
-      :isosceles
+      return :isosceles
     else self == scalene
-      :scalene
+      return :scalene
     end
   end
 
