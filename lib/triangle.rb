@@ -39,7 +39,7 @@ class Triangle
         raise TriangleError if real_triangle.include?(false)
       end
     end
-  end
+
 
 class TriangleError < StandardError
 end
