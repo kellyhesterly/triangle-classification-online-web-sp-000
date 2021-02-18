@@ -13,7 +13,7 @@ class Triangle
     # binding.pry
     if equilateral
       :equilateral
-    else isosceles
+    elseifisosceles
       :isosceles
     else scalene
       :scalene
