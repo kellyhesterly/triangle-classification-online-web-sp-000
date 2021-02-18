@@ -13,8 +13,6 @@ class Triangle
     # binding.pry
     if equilateral
       :equilateral
-      unless side_one == 0 && side_two == 0 && side_three == 0
-        raise TriangleError
     else isosceles
       :isosceles
     else scalene
@@ -34,8 +32,11 @@ class Triangle
     (side_one != side_two) && (side_two != side_three) && (side_one != side_three)
   end
 
+  def validate_triangle
+    
+  end
+  
 class TriangleError < StandardError
-
 end
 
 end
